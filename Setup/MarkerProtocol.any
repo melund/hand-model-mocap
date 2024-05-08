@@ -1,0 +1,75 @@
+
+#define _ROOT
+#define _THUMB1
+#define _THUMB2
+#define _THUMB3
+#define _THUMB4
+
+
+#ifdef _ROOT
+CreateMarkerDriver ROOT ( 
+MarkerName = ROOT,
+UseC3DWeightResiduals = OFF,
+MarkerPlacement=Right.ShoulderArm.Seg.Hand.Carpals,
+PlaceMarkerAt=AnatomicalFrame,
+DRAW_SCALE = 0.4,
+) = {
+  sRelOpt = {-0.015,0,0.0};
+};
+#endif
+
+
+#ifdef _THUMB1
+CreateMarkerDriver THUMB1 ( 
+MarkerName = THUMB1,
+UseC3DWeightResiduals = OFF,
+MarkerPlacement=Main.HumanModel.BodyModel.Right.ShoulderArm.Seg.Hand.Finger1.Seg.Metacarpal,
+PlaceMarkerAt=ProximalJointNode,
+WeightX=0.0, WeightY=0.0, WeightZ=0.0,
+DRAW_SCALE = 0.3,
+) = {
+  sRelOpt = {0,0,0.0};
+};
+#endif
+
+
+#ifdef _THUMB2
+CreateMarkerDriver THUMB2 ( 
+MarkerName = THUMB2,
+UseC3DWeightResiduals = OFF,
+MarkerPlacement=Main.HumanModel.BodyModel.Right.ShoulderArm.Seg.Hand.Finger1.Seg.ProximalPhalanx,
+PlaceMarkerAt=ProximalJointNode,
+WeightX=0.0, WeightY=0.0, WeightZ=0.0,
+DRAW_SCALE = 0.3
+) = {
+  sRelOpt = {0,0,0.0};
+};
+#endif
+
+
+#ifdef _THUMB3
+CreateMarkerDriver THUMB3 ( 
+MarkerName = THUMB3,
+UseC3DWeightResiduals = OFF,
+MarkerPlacement=Main.HumanModel.BodyModel.Right.ShoulderArm.Seg.Hand.Finger1.Seg.DistalPhalanx,
+PlaceMarkerAt=ProximalJointNode,
+WeightX=0.0, WeightY=0.0, WeightZ=0.0,
+DRAW_SCALE = 0.3,
+) = {
+  sRelOpt = {0,0,0.0};
+};
+#endif
+
+#ifdef _THUMB4
+CreateMarkerDriver THUMB4 ( 
+MarkerName = THUMB4,
+UseC3DWeightResiduals = OFF,
+MarkerPlacement=Main.HumanModel.BodyModel.Right.ShoulderArm.Seg.Hand.Finger1.Seg.DistalPhalanx,
+PlaceMarkerAt=DistalJointSurfaceNode,
+WeightX=0.0, WeightY=0.0, WeightZ=0.0,
+DRAW_SCALE = 0.3,
+) = {
+  sRelOpt = {0,0,0.0};
+};
+#endif
+

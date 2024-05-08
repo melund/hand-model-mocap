@@ -1,0 +1,23 @@
+Main.ModelSetup.SubjectSpecificData = 
+{
+
+  Main.HumanModel.Anthropometrics = 
+  {
+     BodyMass = 66;
+     BodyHeight = 1.75;
+     
+     // These antrhopometric data will be used as initial guess for 
+     // the optimization alogorithm the optimization algoritm will
+     // allow changes to the segment lengths 
+     SegmentDimensions =
+     {     
+       Right = 
+       {
+          HandLength = DesignVar(0.182);
+          HandBreadth = DesignVar(0.085);
+       };
+     
+     };
+   }; //Main.HumanModel.Anthropometrics
+
+};
