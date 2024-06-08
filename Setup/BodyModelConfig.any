@@ -18,9 +18,9 @@ Main = {
   #define BM_ARM_RIGHT ON
   #define BM_ARM_LEFT OFF
   
-  #define BM_ARM_MUSCLES_RIGHT OFF
+  #define BM_ARM_MUSCLES_RIGHT ON
   
-    #define BM_HAND_MODEL _HAND_MODEL_RUHM_
+   #define BM_HAND_MODEL _HAND_MODEL_RUHM_
 
 
 };

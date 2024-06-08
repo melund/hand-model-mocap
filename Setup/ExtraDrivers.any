@@ -18,13 +18,38 @@ AnyFolder ExtraDrivers = {
   #define BM_MANNEQUIN_DRIVER_WRIST_FLEXION_RIGHT ON
   
   #define BM_MANNEQUIN_DRIVER_WRIST_ABDUCTION_RIGHT ON
+    
+  // No marker povides the motion between carpals and metacarpals.
+  AnyKinMotion CMC2Flexion = {
+        DriverPos0 = {0};
+        AnyKinMeasure &jnt =Main.HumanModel.BodyModel.Interface.Right.Hand.Finger2.CMCFlexion; 
+     };
+     
+  // CMC3 needs both flexion and abduction contraint to help the carpals to be 
+  // kinematically determinate. This still allows the carpals to move (abduct) relatvie to each other
+  AnyKinMotion CMC3Flexion = {
+     DriverPos0 = {0};
+     AnyKinMeasure &jnt =Main.HumanModel.BodyModel.Interface.Right.Hand.Finger3.CMCFlexion; 
+  };
+  AnyKinMotion CMC3Abduction = {
+     DriverPos0 = {0};
+     AnyKinMeasure &jnt =Main.HumanModel.BodyModel.Interface.Right.Hand.Finger3.CMCAbduction; 
+  };
   
-  #define BM_MANNEQUIN_DRIVER_HAND_RIGHT ON
+  AnyKinMotion CMC4Flexion = {
+     DriverPos0 = {0};
+     AnyKinMeasure &jnt =Main.HumanModel.BodyModel.Interface.Right.Hand.Finger4.CMCFlexion; 
+  };
   
   
-  #define BM_MANNEQUIN_DRIVER_PELVIS_ROT_Y ON
-  #define BM_MANNEQUIN_DRIVER_PELVIS_ROT_Z  ON
-  #define BM_MANNEQUIN_DRIVER_PELVIS_ROT_X  ON
+  AnyKinMotion CMC5Flexion = {
+     DriverPos0 = {0};
+     AnyKinMeasure &jnt =Main.HumanModel.BodyModel.Interface.Right.Hand.Finger5.CMCFlexion; 
+  };
+  
+  //  #define BM_MANNEQUIN_DRIVER_PELVIS_ROT_Y ON
+//  #define BM_MANNEQUIN_DRIVER_PELVIS_ROT_Z  ON
+//  #define BM_MANNEQUIN_DRIVER_PELVIS_ROT_X  ON
 
 
   #include "ExcludeTrunkAndArm.any"

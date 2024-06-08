@@ -21,6 +21,7 @@ Main.ModelSetup.C3DFileData = {
    PointsScaleFactor = 1/1000;
    MarkerDrawOnOff = On;
    
+   
                                     
    MarkerFilterIndex = 0;
    AnalogFilterIndex = 1;    

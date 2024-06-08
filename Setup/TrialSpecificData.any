@@ -2,17 +2,17 @@ Main.ModelSetup.TrialSpecificData =
 {
     
   // This is the name of the trial c3d file without extension
-  TrialFileName = "VMG30";
+  TrialFileName = "VMG";
   
   // This the C3D frame where the analysis starts
   // If not specified it defaults to the first frame of the C3D file
   //FirstFrame = .C3DFileData.Header.FirstFrameNo;
-  FirstFrame = 10;
+  FirstFrame = 60;
   
   // This the C3D frame where the analysis ends
   // If not specified it defaults the first frame of the C3D file
   //LastFrame = .C3DFileData.Header.LastFrameNo;
-  LastFrame = 400;
+  LastFrame = 127;
   
   // tStart specifies the time of the analysis. Setting this overrides 
   // the 'FirstFrame' value
@@ -43,26 +43,26 @@ Main.ModelSetup.TrialSpecificData =
     // The following values are selected so the model loads with the 
     // initial position of the wrist at the origin of the global reference frame. 
   
-    PelvisPosX = -0.12763103534913306;
-    PelvisPosY = -0.199644852823671;
-    PelvisPosZ = -0.18128518598294616;
-    PelvisRotX = 0.99355542778266981;
-    PelvisRotY = 0.11330197259848721;
-    PelvisRotZ = -6.4909124853871658;
-    PelvisThoraxExtension = 1.3075816892565773e-10;
-    PelvisThoraxLateralBending = 1.4192723257095014e-11;
-    PelvisThoraxRotation = -8.339398223543099e-11;
-  
-    Right = {
- 
-        SternoClavicularProtraction = -22.99997354735514;
-        SternoClavicularElevation = 11.499728676139672;
-        GlenohumeralFlexion = 30.000000309912959;
-        GlenohumeralAbduction = 1.0000002115211561;
-        GlenohumeralExternalRotation = -8.5377364625159387e-07;
-        ElbowFlexion = 60.00000031012469;
-        ElbowPronation = 0.001169973446522;
     
+    PelvisPosX = 0.31761532618237753;
+    PelvisPosY = -0.23554761365098892;
+    PelvisPosZ = 0.10417120742108681;
+    PelvisRotX = -118.79414330504717;
+    PelvisRotY = -22.017618268025139;
+    PelvisRotZ = 129.88539474862318;
+    PelvisThoraxExtension = 1.3081303349391295e-10;
+    PelvisThoraxLateralBending = 1.3320163005969206e-11;
+    PelvisThoraxRotation = -8.3158782701545095e-11;
+  
+    Right = 
+    {
+        SternoClavicularProtraction = -22.999973547355051;
+        SternoClavicularElevation = 11.499728676139377;
+        GlenohumeralFlexion = 30.000000309912654;
+        GlenohumeralAbduction = 1.0000002115251654;
+        GlenohumeralExternalRotation = 0.0;
+        ElbowFlexion = 60.000000310125159;
+        ElbowPronation = 0.0011699742852866171;
   };
   
   
